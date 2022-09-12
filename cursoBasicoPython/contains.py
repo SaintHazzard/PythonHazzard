@@ -10,7 +10,7 @@ class Person(object):
 
 
 p = Person('Robby Krieger', 23)
-print('agbre' in p)
+print('age' in p)
 
 
 
