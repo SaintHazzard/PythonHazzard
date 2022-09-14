@@ -14,9 +14,9 @@ def digitize(n):
     
     
     
-#  n = str(n)
-#     print(list(n[::-1]))
-#     for val in n:
-#         list(val)   
+    n = str(n)
+    print(list(n[::-1]))
+    for val in n:
+        list(val)   
 
-print(digitize(n))
+    print(digitize(n))

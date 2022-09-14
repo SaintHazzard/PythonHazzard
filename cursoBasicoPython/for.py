@@ -1,3 +1,6 @@
+
+
+
 x = int(input('Maximo valor de la potencia \n'))
 
 def potencias_de_2_for(x):
@@ -22,5 +25,11 @@ def tablas_mult_for(x):
 
 
 
-if __name__ == "__main__":
-    tablas_mult_for(x)
+# if __name__ == "__main__":
+#     tablas_mult_for(x)
+
+
+
+
+
+
