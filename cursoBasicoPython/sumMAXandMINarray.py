@@ -1,7 +1,7 @@
 
 
 
-print(check(seq, elem))
+# print(check(seq, elem))
     
 
 
