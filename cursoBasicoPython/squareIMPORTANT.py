@@ -1,7 +1,24 @@
 
 
-from cmath import sqrt
 
+import math
+n = -1
+
+
+def is_square(n):
+    if n >= 0:
+        return math.sqrt(n).is_integer()
+    return False
+
+
+def is_square1(n):
+    try:
+        return math.sqrt(n).is_integer()
+    except ValueError:
+        return False
+
+
+print(is_square(n))
 
 a = 3
 b = 2
@@ -22,7 +39,7 @@ def is_triangle1(a, b, c):
     return a + b > c
 
 
-print(is_triangle1(a, b, c))
+# print(is_triangle1(a, b, c))
 
 
 sq = 121
@@ -34,6 +51,6 @@ def find_next_square(sq):
         print(type(print(pow((sqrt(sq)+1), 2))), 'tipo')
 
 
-find_next_square(sq)
+# find_next_square(sq)
 
 

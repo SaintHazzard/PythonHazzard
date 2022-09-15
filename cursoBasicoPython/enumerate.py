@@ -15,3 +15,7 @@ def first_non_consecutive1(arr):
             return arr[a + 1]
 
 print(first_non_consecutive1(arr))
+
+
+def accum2(s):
+    return '-'.join((a * i).title() for i, a in enumerate(s, 1))
