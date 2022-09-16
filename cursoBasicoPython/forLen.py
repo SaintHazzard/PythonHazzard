@@ -1,3 +1,6 @@
+from re import S
+
+
 words = ['hello', 'world', 'this', 'is', 'great']
 
 
@@ -15,5 +18,7 @@ def smash(words):
     
     
     
-print(smash(words))
-    
+# print(smash(words))
+
+
+

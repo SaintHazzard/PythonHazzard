@@ -21,3 +21,21 @@ def count_positives_sum_negatives1(arr):
     return [pos, neg] if len(arr) else []
 
 print(count_positives_sum_negatives(arr))
+
+
+
+
+def count_by(x, n):
+    """
+    Return a sequence of numbers counting by `x` `n` times.
+    """
+    return [x*i for i in range(1,n+1)]
+
+def count_by(x, n):
+    """
+    Return a sequence of numbers counting by `x` `n` times.
+    """
+    print(range(x, x * n + 1, x) ,  'este')
+
+
+print(count_by(1,10))
