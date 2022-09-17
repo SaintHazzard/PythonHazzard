@@ -1,5 +1,5 @@
-from operator import index
-from pickletools import string1
+
+from re import sub
 import string
 
 
@@ -24,7 +24,18 @@ def alphabet_position1(s):
     return " ".join(str(ord(c)-ord("a")+1) for c in s.lower() if c.isalpha())
         
 
+# print(alphabet_position1(s))
+s = "aaaxbbbbyyhwawiwjjjwwm"
 
-print(alphabet_position1(s))
+
+def printer_error(s):
+    alfabeto = string.ascii_lowercase
+    print(alfabeto)
+    error = 0
+    for letter in s:
+        if letter in 'nopqrstuvwxyz':
+            error += 1
+    return f'{error}/{len(s)}'
+
 
 
