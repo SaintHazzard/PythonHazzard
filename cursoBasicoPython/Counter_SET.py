@@ -1,4 +1,5 @@
 
+from collections import Counter
 import string
 
 
@@ -56,3 +57,33 @@ def is_pangram(s):
 
 
 print(is_pangram(s))
+
+
+word = "Dind"
+# funciona correctamente
+
+
+def duplicate_encode(word):
+    s = ''
+    word = word.lower()
+    print(word)
+    for i in word:
+        if word.count(i) == 1:
+            s += "("
+        else:
+            s += ")"
+
+    return s
+
+
+# print(duplicate_encode(word))
+
+
+def duplicate_encode1(word):
+    word = word.lower()
+    counter = Counter(word)
+    print(counter)
+    return ''.join(('(' if counter[c] == 1 else ')') for c in word)
+
+
+print(duplicate_encode1(word))

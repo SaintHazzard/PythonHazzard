@@ -9,3 +9,9 @@ def remove_char(s):
 
 
 print(remove_char(s))
+
+
+name = 'Martin'
+
+
+

@@ -1,28 +1,38 @@
+from re import I
+
+
+iterable = 'AAAABBBCCDAABBB'
+
+
+def unique_in_order(iterable):
+    return [iterable[i] if iterable[i] != iterable[i+1] else None for i in iterable]
+
+
+def unique_in_order1(iterable):
+    result = []
+    prev = None
+    print(iterable[:])
+    for char in iterable[:]:
+        if char != prev:
+            result.append(char)
+            prev = char
+    return result
+
+
+def unique_in_order2(iterable):
+    newList = []
+    for item in iterable:
+        print(len(newList))
+        if not len(newList) or item != newList[len(newList) - 1]:
+            newList.append(item)
+    return newList
+
+print(unique_in_order2(iterable))
 
 
 
-numbers1 = [1,2,3,4,5]
-numbers = [3,4,1,4,1]
-
-
-def remove_smallest(numbers):
-    numbers1 = numbers
-    if numbers1:
-     
-     numbers1.remove(min(numbers))
-     return numbers1
-    else:
-        return []
-
-
-
-def remove_smallest1(numbers):
-    smallest = numbers.index(min(numbers))
-    print(smallest)
-    return [i for i in numbers if numbers.index(i) == numbers.index(smallest)]
 
 
 
 
-print(remove_smallest1(numbers))
-    
+
