@@ -1,3 +1,4 @@
+# FUNCION SUMAR UN RANGO DE NUMEROS
 def get_sum(a, b):
     s = 0
     if a == b:
@@ -31,4 +32,17 @@ def grow(arr):
     # return sum(arr[i]*arr[i+1] for i in range(len(arr)+1))
 
 
+num = 8
 
+
+def summation(num):
+    sumer = 0
+    for i in range(1, num+1):
+        sumer += i
+    return sumer
+
+
+def summation1(num):
+    return sum(range(1, num+1))
+
+# print(summation1(num))
