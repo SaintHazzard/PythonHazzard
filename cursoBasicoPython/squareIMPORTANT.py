@@ -47,11 +47,27 @@ sq = 121
 
 
 def find_next_square(sq):
-    if sq % sq**0.5 == 0: #encuentra el valor sin residuo para que sea una potencia entera **0.5 es raiz cuadrada
-        print(pow((sqrt(sq)+1), 2), 'normal') # devuelve el valor sq y le suba 1 para hayar el cuadrado entero siguient
-        print(type(print(pow((sqrt(sq)+1), 2))), 'tipo')
+    if sq % sq**0.5 == 0: #encuentra el valor sin residuo para que sea una potencia entera **0.5 es raiz cuadrada si uso sqrt me devuelve un numero complejo
+        # print(pow((sqrt(sq)+1), 2), 'normal') # devuelve el valor sq y le suba 1 para hayar el cuadrado entero siguient
+        # print(type(print(pow((sqrt(sq)+1), 2))), 'tipo')
+        return pow((sq**0.5+1),2)
+    else:
+        -1
 
 
-# find_next_square(sq)
+def find_next_square(sq):
+        if sq % sq**0.5 == 0:
+            return (pow((sq**0.5+1), 2))
+        else:
+          return -1
+
+
+def find_next_square(sq):
+    sq = sq ** 0.5
+    if sq.is_integer():
+        return (sq + 1)**2
+    return -1
+
+print(find_next_square(sq))
 
 
