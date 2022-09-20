@@ -62,3 +62,20 @@ def duplicate_count2(s):
 
 
 print(duplicate_count1(text))
+
+
+def square_digits(num):
+    return int("".join([str((int(i)**2)) for i in str(num)]))
+
+
+# print(square_digits(num))
+
+
+x = '8 j 8   mBliB8g  imjB8B8  jl  B'
+
+
+def no_space(x):
+    return "".join(i for i in x if i.isdigit() or i.isalpha())
+
+
+print(no_space(x))

@@ -16,3 +16,7 @@ def disemvowel1(string_):
 
 
 print(disemvowel1(string_))
+
+
+def no_space(x):
+    return x.replace(' ' ,'')
