@@ -23,9 +23,7 @@ n = 999
 
 
 def persistence(n):
-
     newN = [int(i) for i in str(n)]
-
     if len(newN) == 1:
         return 0
     ciclos = 0
