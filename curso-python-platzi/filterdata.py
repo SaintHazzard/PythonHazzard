@@ -88,7 +88,9 @@ def run():
     # old_people = [{**worker, **{'old': worker['age'] > 70}} for worker in DATA]
     old_people = [worker | {'old': worker['age'] > 70 } for worker in DATA]
     for worker in old_people:
-        print(worker)
+
+
+sudo mysql print(worker)
 
    
 

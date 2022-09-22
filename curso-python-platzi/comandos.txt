@@ -1,0 +1,2 @@
+os.system('cls') -> windows
+os.system("clear") -> LINUX

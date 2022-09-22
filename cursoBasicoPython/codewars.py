@@ -28,11 +28,14 @@ def tribonacci1(signature, n):
 # print(tribonacci(signature, n))
 
 
+# EXPRESIONES IRREGULARES, IMPORTANTISIMO.
 arr = [':D', ':~)', ';~D', ':)']
-
-
 def count_smileys(arr):
     return len(re.findall('[:;][-~]?[)D]', str(arr)))
+
+
+
+
 
 current = 'green'
 def update_light(current):
@@ -42,8 +45,6 @@ def update_light(current):
         return 'red'
     elif current == 'red':
         return 'green'
-
-
 def update_light(current):
     return {"green": "yellow", "yellow": "red", "red": "green"}[current]
 
